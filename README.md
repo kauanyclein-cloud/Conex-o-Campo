@@ -33,7 +33,7 @@ Para garantir a simplicidade e a viabilidade do projeto, utilizamos apenas as te
 
 Como o site está hospedado no GitHub Pages, você pode acessá-lo diretamente de qualquer navegador de internet, seja no celular ou no computador, através do link gerado pelo GitHub:
 
-**[Insira aqui o link do seu GitHub Pages gerado]**
+**https://kauanyclein-cloud.github.io/Conex-o-Campo/**
 
 ---
 
