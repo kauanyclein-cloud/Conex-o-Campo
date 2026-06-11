@@ -1,23 +1,49 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
-    <title>Conexão Campo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cisterna Inteligente - Projeto Agrinho</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Conexão Campo!</h1>
-    <p>A nossa semente foi plantada.</p>
-</body>
-</html>
-<div class="fazenda">
-        <h1>Conexão campo 🌿</h1>
-        <p>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente.</p>
-        
-        <!-- O nosso trator vai estacionar aqui depois! -->
-        <div id="sistema-rural"></div>
-    </div>
+    <header>
+        <h1>🌧️ Cisterna Inteligente</h1>
+        <p>Projeto Agrinho: Gestão inteligente da água na propriedade rural.</p>
+    </header>
 
-    <!-- Ligando o nosso trator (JS) -->
+    <main>
+        <section class="info-section">
+            <h2>Porquê captar a água da chuva?</h2>
+            <p>O aproveitamento da água da chuva reduz a dependência de fontes externas, garante segurança hídrica nos períodos de seca e promove a sustentabilidade da propriedade agrícola.</p>
+        </section>
+
+        <section class="app-section">
+            <h2>Simulador de Captação Mensal</h2>
+            <p>Insira o tamanho do telhado (da sua estufa, galpão ou casa) para descobrir o potencial de recolha de água na nossa região.</p>
+            
+            <form id="cisternaForm">
+                <div class="input-group">
+                    <label for="areaTelhado">Área do Telhado (em metros quadrados - m²):</label>
+                    <input type="number" id="areaTelhado" placeholder="Ex: 50" required min="1">
+                </div>
+
+                <button type="submit">Calcular Captação de Água</button>
+            </form>
+
+            <div id="resultado" class="resultado-oculto">
+                <h3>Potencial de Recolha Mensal:</h3>
+                <p id="valor-litros">0 Litros</p>
+                
+                <div class="impacto-box">
+                    <h4>🌱 O que isso significa na prática?</h4>
+                    <p id="mensagem-impacto"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
